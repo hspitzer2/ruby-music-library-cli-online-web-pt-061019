@@ -26,6 +26,7 @@ class MusicLibraryController
         list_artist
       when "list genres"
         list_genres
+      end
 
       user_input = gets.strip
     end
