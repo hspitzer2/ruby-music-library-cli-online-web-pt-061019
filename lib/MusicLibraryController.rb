@@ -27,11 +27,11 @@ class MusicLibraryController
         list_artist
        when "list genres"
         list_genres
-      when "list_songs_by_artist"
+       when "list_songs_by_artist"
         list_songs_by_artist
-      when "play song"
+       when "play song"
         play_song
-      end
+       end
 
       user_input = gets.strip
     end
