@@ -4,6 +4,7 @@ class MusicLibraryController
 
   def initialize(path = "./db/mp3s")
     MusicImporter.new(path).import
+    import.import
   end
 
   def call
@@ -24,13 +25,13 @@ class MusicLibraryController
        when "list songs"
          list_songs
        when "list artists"
-        list_artists
+         list_artists
        when "list genres"
-        list_genres
+         list_genres
       when "list_songs_by_artist"
-        list_songs_by_artist
+         list_songs_by_artist
        when "play song"
-        play_song
+         play_song
        end
      end
   end
