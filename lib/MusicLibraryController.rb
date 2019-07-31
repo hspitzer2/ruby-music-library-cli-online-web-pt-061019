@@ -27,7 +27,7 @@ class MusicLibraryController
         list_artist
        when "list genres"
         list_genres
-      when "list_songs_by_artist"
+      when "list_songs_by_artists"
         list_songs_by_artist
        when "play song"
         play_song
@@ -48,7 +48,7 @@ class MusicLibraryController
     Genre.all.sort{|a,b| a.name <=>b.name}.each_with_index{|genre, index| puts "#{index +1}. #{genre.name}"}
    end
 
-  def list_songs_by_artist
+  def list_songs_by_artists
     puts "Please enter the name of an artist:"
       input = gets.strip
     if artist = Artist.find_by_name(input)
