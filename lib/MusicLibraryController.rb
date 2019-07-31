@@ -23,7 +23,7 @@ class MusicLibraryController
        case input
        when "list songs"
          list_songs
-       when "list artist"
+       when "list artists"
         list_artist
        when "list genres"
         list_genres
